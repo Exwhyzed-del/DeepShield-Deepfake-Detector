@@ -10,5 +10,6 @@ lxml
 scikit-learn
 gunicorn
 python-dotenv
+whitenoise
 google-auth
 google-auth-oauthlib

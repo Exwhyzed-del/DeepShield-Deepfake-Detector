@@ -3,10 +3,12 @@ import json
 import tempfile
 from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
+from whitenoise import WhiteNoise
 from detector.ml_detector import predict_image
 from news_detector.news_logic import verify_news
 
 app = Flask(__name__)
+app.wsgi_app = WhiteNoise(app.wsgi_app, root='static/', prefix='static/')
 
 # Load CORS origins from environment variable
 allowed_origins = os.getenv("DEEPSHIELD_ALLOWED_ORIGINS", "*").split(",")
