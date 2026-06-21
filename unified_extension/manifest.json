@@ -12,7 +12,7 @@
   ],
   "host_permissions": [
     "<all_urls>",
-    "https://deepseek-ai-en24.onrender.com/*",
+    "http://localhost:5000/*",
     "https://news.google.com/*",
     "https://duckduckgo.com/*",
     "https://html.duckduckgo.com/*",

@@ -98,7 +98,7 @@ async function verifyNews(text) {
   console.log("Attempting to verify news at:", `${CONFIG.API_BASE_URL}/analyze-news`);
   try {
     const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 60000); // 60s timeout for Render cold start
+    const timeoutId = setTimeout(() => controller.abort(), 30000); // 30s timeout for local server
 
     const response = await fetch(`${CONFIG.API_BASE_URL}/analyze-news`, {
       method: "POST",

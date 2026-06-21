@@ -7,6 +7,6 @@ document.getElementById('openSidePanel').addEventListener('click', async () => {
 });
 
 document.getElementById('openDashboard').addEventListener('click', () => {
-  chrome.tabs.create({ url: 'https://deepseek-ai-en24.onrender.com' });
+  chrome.tabs.create({ url: 'http://localhost:5000' });
   window.close();
 });
